@@ -1,0 +1,10 @@
+{
+  "name": "albanyrvresort.com",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "nuxt"
+  },
+  "dependencies": {
+    "nuxt": "^2.2.0"
+  }
+}
