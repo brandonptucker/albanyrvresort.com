@@ -4,7 +4,7 @@
 
 <script>
 if (process.browser) {
-  require('bootstrap');
+  require('bootstrap'); // eslint-disable-line
 }
 
 export default {
@@ -13,9 +13,13 @@ export default {
       titleTemplate: '%s - Home',
       meta: [
         // hid is used as unique identifier. Do not use `vmid` for it as it will not work
-        { hid: 'description', name: 'description', content: 'My custom description' }
-      ]
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My custom description',
+        },
+      ],
     };
-  }
+  },
 };
 </script>
