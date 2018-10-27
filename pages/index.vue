@@ -1,5 +1,9 @@
 <template>
-  <h1>Hello world!</h1>
+  <div 
+    class="container mt-5" 
+    style="height: 2000px">
+    <p>This is the content for <code>index.vue</code>.</p>
+  </div>
 </template>
 
 <script>
