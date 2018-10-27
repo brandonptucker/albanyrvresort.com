@@ -11,7 +11,7 @@ export default {
       }
     },
   },
-  css: ['@/styles/main.scss'],
+  css: ['@/styles/main.scss', '@fortawesome/fontawesome-svg-core/styles.css'],
   head: {
     htmlAttrs: {
       lang: 'en',
@@ -25,4 +25,5 @@ export default {
     ],
     title: 'Albany RV Resort',
   },
+  plugins: ['~/plugins/font-awesome'],
 };
