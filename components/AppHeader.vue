@@ -1,6 +1,6 @@
 <template>
   <header class="bg-dark">
-    <div class="d-flex flex-column flex-md-row mx-3 pt-2">
+    <div class="container d-flex flex-column flex-md-row pt-2">
       <a 
         class="mr-3 mb-1" 
         href="#"><font-awesome-icon icon="phone" /> (229) 431-2229</a>
