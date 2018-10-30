@@ -6,7 +6,7 @@
         href="#"><img src="~/assets/logo.png"></a>
       <a 
         class="btn btn-primary d-sm-block d-md-none mr-2" 
-        href="#">Call to Action</a>
+        href="#">Book Now</a>
       <button 
         class="navbar-toggler" 
         type="button" 
@@ -29,14 +29,20 @@
             href="#">Features</a>
           <a 
             class="nav-item nav-link" 
-            href="#">Pricing</a>
+            href="#">Rates</a>
           <a 
-            class="nav-item nav-link disabled" 
-            href="#">Disabled</a>
+            class="nav-item nav-link" 
+            href="#">Gallery</a>
+          <a 
+            class="nav-item nav-link" 
+            href="#">Map/Rules</a>
+          <a 
+            class="nav-item nav-link" 
+            href="#">Contact</a>
         </div>
         <a 
           class="btn btn-primary d-none d-md-block" 
-          href="#">Call to Action</a>
+          href="#">Book Now</a>
       </div>
     </div>
   </nav>
