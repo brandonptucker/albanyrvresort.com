@@ -105,11 +105,46 @@
         </div>
       </div>
     </div>
+    <div class="container my-5 text-center">
+      <h2 class="mb-5">Testimonials</h2>
+      <testimonials :testimonials="testimonials"/>
+    </div>
   </main>
 </template>
 
 <script>
+import Testimonials from '../components/Testimonials.vue';
+
 export default {
+  components: {
+    Testimonials,
+  },
+  data() {
+    return {
+      testimonials: [
+        {
+          text:
+            'This is a great place to stay. Family owned and operated, very clean and well kept. Jennifer booked our reservation and was extremely friendly and hospitable. The spaces are clean, easy to get in and out of and everything worked as it should. A great place for peace and quiet. We will be back!',
+          name: 'Darren Janesky',
+        },
+        {
+          text:
+            'Super clean resort-like bathrooms and showers, well maintained park, nice rigs stay here, owners are very friendly and helpful, RV parts and service next door.',
+          name: 'Mike Shelton',
+        },
+        {
+          text:
+            'We love this place! Each lot has ample space, shade and privacy! It has now become our go-to place to stop going north and heading south!',
+          name: 'Rose Gifford',
+        },
+        {
+          text:
+            '5 stars Love, Love, Love this park! Staff is tremendously helpful, Clean well maintained facilities. Spacious Lots, Quiet. Will be back!',
+          name: 'A Google User',
+        },
+      ],
+    };
+  },
   head() {
     return {
       titleTemplate: '%s - Home',

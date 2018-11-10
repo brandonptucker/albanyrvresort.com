@@ -7,6 +7,7 @@ import {
   faSmile,
   faFish,
   faWifi,
+  faCircle,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebook,
@@ -26,7 +27,8 @@ library.add(
   faBus,
   faSmile,
   faFish,
-  faWifi
+  faWifi,
+  faCircle
 );
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
