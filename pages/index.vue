@@ -80,6 +80,31 @@
         </div>
       </div>
     </div>
+    <div class="bg-dark pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 align-self-center mb-5">
+            <img
+              class="img-fluid"
+              src="https://source.unsplash.com/random"
+            >
+          </div>
+          <div class="col-md-6 align-self-center mb-5 text-center text-white">
+            <h2 class="mb-5">Our RV Sites</h2>
+            <ul
+              class="list-unstyled lead"
+              style="color: rgba(255, 255, 255, .5)"
+            >
+              <li>82 full hookup campsites</li>
+              <li>20 x 40 ft. level cement patios</li>
+              <li>Extra large 120 ft. pull thrus</li>
+              <li>Spacious, private sites</li>
+              <li>Easy entry and exit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
