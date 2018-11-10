@@ -109,15 +109,18 @@
       <h2 class="mb-5">Testimonials</h2>
       <testimonials :testimonials="testimonials"/>
     </div>
+    <google-map />
   </main>
 </template>
 
 <script>
 import Testimonials from '../components/Testimonials.vue';
+import GoogleMap from '../components/GoogleMap.vue';
 
 export default {
   components: {
     Testimonials,
+    GoogleMap,
   },
   data() {
     return {
