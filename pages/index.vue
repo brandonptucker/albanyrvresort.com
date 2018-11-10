@@ -42,6 +42,44 @@
         </div>
       </div>
     </div>
+    <div class="container mt-5 text-center">
+      <h1>Welcome</h1>
+      <p class="lead mb-5">Albany RV Resort is a family owned and operated RV campground located in Albany, GA.</p>
+      <div class="row">
+        <div class="col-md-3 mb-5">
+          <font-awesome-icon
+            class="text-primary mb-3"
+            icon="bus"
+            size="3x"/>
+          <h3>Big Rigs</h3>
+          <p>Extra large RV sites designed for accessibility and big rigs</p>
+        </div>
+        <div class="col-md-3 mb-5">
+          <font-awesome-icon
+            class="text-primary mb-3"
+            icon="smile"
+            size="3x"/>
+          <h3>Friendly Staff</h3>
+          <p>We strive to create a fun camping experience for all</p>
+        </div>
+        <div class="col-md-3 mb-5">
+          <font-awesome-icon
+            class="text-primary mb-3"
+            icon="fish"
+            size="3x"/>
+          <h3>Lake Tucker</h3>
+          <p>Stocked fishing pond with bass, bream, and catfish</p>
+        </div>
+        <div class="col-md-3 mb-5">
+          <font-awesome-icon
+            class="text-primary mb-3"
+            icon="wifi"
+            size="3x"/>
+          <h3>Free Wifi</h3>
+          <p>High speed wireless internet at no additional cost</p>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
