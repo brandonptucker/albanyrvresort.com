@@ -1,7 +1,7 @@
 <template>
   <footer
     class="bg-light pt-5"
-    style="border-top: 1px solid rgba(0, 0, 0, .1)">
+    style="border-top: 1px solid rgba(0, 0, 0, .1); border-bottom: 1px solid rgba(0, 0, 0, .1)">
     <div class="container">
       <div class="row text-center">
         <div class="col-md-3">
