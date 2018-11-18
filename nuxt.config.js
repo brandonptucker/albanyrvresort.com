@@ -1,3 +1,5 @@
+const webpack = require('webpack'); // eslint-disable-line
+
 export default {
   build: {
     extend(config, { isDev, isClient }) {
@@ -10,6 +12,12 @@ export default {
         });
       }
     },
+    plugins: [
+      new webpack.ProvidePlugin({
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+      }),
+    ],
   },
   css: ['@/styles/main.scss', '@fortawesome/fontawesome-svg-core/styles.css'],
   head: {
