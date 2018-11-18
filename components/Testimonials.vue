@@ -1,8 +1,17 @@
 <template>
   <div>
     <blockquote class="blockquote mb-5">
-      <p><em>"{{ testimonials[index].text }}"</em></p>
-      <footer class="blockquote-footer">{{ testimonials[index].name }}</footer>
+      <p>
+        <transition name="fade">
+          <em :key="index">"{{ testimonials[index].text }}"</em>
+        </transition>
+      </p>
+      <transition name="fade">
+        <footer
+          v-if="testimonials[index].name"
+          :key="index"
+          class="blockquote-footer">{{ testimonials[index].name }}</footer>
+      </transition>
     </blockquote>
     <ul class="list-inline">
       <li
@@ -30,3 +39,12 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.fade-enter-active {
+  transition: opacity 0.8s;
+}
+.fade-enter {
+  opacity: 0;
+}
+</style>
