@@ -15,21 +15,21 @@
             <input
               class="form-control"
               type="text"
-              placeholder="Name*"
+              placeholder="Name"
             >
           </div>
           <div class="col-md-4 form-group">
             <input
               class="form-control"
               type="text"
-              placeholder="Email*"
+              placeholder="Email"
             >
           </div>
           <div class="col-md-4 form-group">
             <input
               class="form-control"
               type="text"
-              placeholder="Phone*"
+              placeholder="Phone"
             >
           </div>
         </div>
@@ -38,7 +38,7 @@
             <textarea
               class="form-control"
               rows="10"
-              placeholder="Message*"
+              placeholder="Message"
             />
           </div>
         </div>
