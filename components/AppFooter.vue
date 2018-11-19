@@ -5,11 +5,14 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-md-3">
-          <a href="#">
+          <router-link
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            to="/">
             <img
               src="~/assets/logo.png"
               class="mb-2">
-          </a>
+          </router-link>
           <p class="mb-5">Albany RV Resort<br>© Copyright 2018<br>All Rights Reserved.</p>
         </div>
         <div class="col-md-3">

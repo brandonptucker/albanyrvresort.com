@@ -1,12 +1,22 @@
 <template>
   <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
     <div class="container">
-      <a
+      <router-link
         class="navbar-brand mr-auto"
-        href="#"><img src="~/assets/logo.png"></a>
-      <a
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+        to="/"
+      >
+        <img src="~/assets/logo.png">
+      </router-link>
+      <router-link
         class="btn btn-primary d-sm-block d-md-none mr-2"
-        href="#">Book Now</a>
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+        to="/reservations"
+      >
+        Book Now
+      </router-link>
       <button
         class="navbar-toggler"
         type="button"
@@ -21,29 +31,54 @@
         id="navbarNavAltMarkup"
         class="collapse navbar-collapse">
         <div class="navbar-nav ml-auto mr-2">
-          <a
-            class="nav-item nav-link active"
-            href="#">Home <span class="sr-only">(current)</span></a>
-          <a
+          <router-link
+            active-class="active"
             class="nav-item nav-link"
-            href="#">Features</a>
-          <a
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            exact
+            to="/"
+          >Home</router-link>
+          <router-link
+            active-class="active"
             class="nav-item nav-link"
-            href="#">Rates</a>
-          <a
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            to="/features"
+          >Features</router-link>
+          <router-link
+            active-class="active"
             class="nav-item nav-link"
-            href="#">Gallery</a>
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            to="/rates"
+          >Rates</router-link>
+          <router-link
+            active-class="active"
+            class="nav-item nav-link"
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            to="/gallery"
+          >Gallery</router-link>
           <a
             class="nav-item nav-link"
             href="/brochure.pdf"
-            target="_blank">Map &amp; Rules</a>
-          <a
+            target="_blank"
+          >Map &amp; Rules</a>
+          <router-link
+            active-class="active"
             class="nav-item nav-link"
-            href="#">Contact</a>
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            to="/contact"
+          >Contact</router-link>
         </div>
-        <a
+        <router-link
           class="btn btn-primary d-none d-md-block"
-          href="#">Book Now</a>
+          data-toggle="collapse"
+          data-target=".navbar-collapse.show"
+          to="/reservations"
+        >Book Now</router-link>
       </div>
     </div>
   </nav>
