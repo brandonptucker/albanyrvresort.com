@@ -13,3 +13,7 @@
   color: #fff;
   background: $primary !important;
 }
+
+.vdp-datepicker .form-control[readonly] {
+  background: $white;
+}
