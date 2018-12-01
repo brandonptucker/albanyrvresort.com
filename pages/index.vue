@@ -7,22 +7,22 @@
           <div class="m-auto">
             <p class="display-4 text-white text-center mb-4">Reserve Your Site Today!</p>
             <form>
-              <div class="form-row justify-content-center">
-                <div class="form-group col-md-3">
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label style="color: white">Check-In</label>
                   <input
-                    type="text"
-                    class="form-control form-control-lg"
-                    placeholder="Check-In">
+                    type="date"
+                    class="form-control form-control-lg">
                 </div>
-                <div class="form-group col-md-3">
+                <div class="form-group col-md-4">
+                  <label style="color: white">Check-Out</label>
                   <input
-                    type="text"
-                    class="form-control form-control-lg"
-                    placeholder="Check-Out">
+                    type="date"
+                    class="form-control form-control-lg">
                 </div>
                 <div class="form-group col-md-2">
+                  <label style="color: white">Adults</label>
                   <select class="form-control form-control-lg">
-                    <option>Adults</option>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -30,10 +30,10 @@
                     <option>5</option>
                   </select>
                 </div>
-                <div class="form-group">
+                <div class="form-group col-md-2 text-center">
                   <a
                     class="btn btn-lg btn-primary"
-                    style="margin-right: 5px; margin-left: 5px"
+                    style="margin-top: 32px"
                     href="#">Book Now</a>
                 </div>
               </div>
@@ -168,12 +168,17 @@ export default {
 .overlay {
   background: rgba(0, 0, 0, 0.5);
   height: calc(100vh - 152px);
-  min-height: 515px;
 }
 
 @media screen and (min-width: 768px) {
   .overlay {
     height: calc(100vh - 102px);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .overlay {
+    min-height: 768px;
   }
 }
 </style>
