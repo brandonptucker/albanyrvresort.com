@@ -7,22 +7,29 @@
           <div class="m-auto">
             <p class="display-4 text-white text-center mb-4">Reserve Your Site Today!</p>
             <form>
-              <div class="form-row">
-                <div class="form-group col-md-4">
+              <div class="form-row justify-content-center">
+                <div class="form-group col-md-3">
                   <label style="color: white">Check-In</label>
-                  <input
-                    type="date"
-                    class="form-control form-control-lg">
+                  <datepicker
+                    :disabled-dates="{ to: new Date() }"
+                    v-model="checkin"
+                    placeholder="Check-In"
+                    input-class="form-control form-control-lg"
+                    @selected="checkinSelected"/>
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-3">
                   <label style="color: white">Check-Out</label>
-                  <input
-                    type="date"
-                    class="form-control form-control-lg">
+                  <datepicker
+                    :disabled-dates="checkin ? { to: addDays(checkin, 1) } : { to: new Date() }"
+                    v-model="checkout"
+                    placeholder="Check-Out"
+                    input-class="form-control form-control-lg" />
                 </div>
                 <div class="form-group col-md-2">
                   <label style="color: white">Adults</label>
-                  <select class="form-control form-control-lg">
+                  <select
+                    v-model="adults"
+                    class="form-control form-control-lg">
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -30,11 +37,14 @@
                     <option>5</option>
                   </select>
                 </div>
-                <div class="form-group col-md-2 text-center">
+                <div
+                  class="form-group"
+                  style="padding-left: 5px; padding-right: 5px">
                   <a
                     class="btn btn-lg btn-primary"
                     style="margin-top: 32px"
-                    href="#">Book Now</a>
+                    href="#"
+                    @click="submit">Book Now</a>
                 </div>
               </div>
             </form>
@@ -114,11 +124,13 @@
 </template>
 
 <script>
+import Datepicker from 'vuejs-datepicker';
 import Testimonials from '../components/Testimonials.vue';
 import GoogleMap from '../components/GoogleMap.vue';
 
 export default {
   components: {
+    Datepicker,
     Testimonials,
     GoogleMap,
   },
@@ -146,7 +158,29 @@ export default {
           name: 'A Google User',
         },
       ],
+      checkin: null,
+      checkout: null,
+      adults: 1,
     };
+  },
+  methods: {
+    checkinSelected(selected) {
+      if (selected >= this.checkout) {
+        const date = new Date(selected);
+        date.setDate(date.getDate() + 1);
+        this.checkout = date;
+      }
+    },
+    addDays(date, days) {
+      const d = new Date(date);
+      d.setDate(date.getDate() + days);
+      return d;
+    },
+    submit() {
+      console.log(`checkin: ${this.checkin}`);
+      console.log(`checkout: ${this.checkout}`);
+      console.log(`adults: ${this.adults}`);
+    },
   },
   head() {
     return {

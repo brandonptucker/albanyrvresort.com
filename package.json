@@ -16,7 +16,8 @@
     "bootstrap": "^4.1.3",
     "jquery": "^3.3.1",
     "nuxt": "^2.2.0",
-    "popper.js": "^1.14.4"
+    "popper.js": "^1.14.4",
+    "vuejs-datepicker": "^1.5.4"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
