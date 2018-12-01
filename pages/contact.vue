@@ -1,8 +1,8 @@
 <template>
   <main role="main">
     <hero />
-    <div class="container py-5 text-center">
-      <h2 class="mb-5">
+    <div class="container py-5">
+      <h2 class="mb-5 text-center">
         <font-awesome-icon
           class="text-primary"
           icon="envelope"
@@ -12,6 +12,7 @@
       <form>
         <div class="form-row">
           <div class="col-md-4 form-group">
+            <label>Name</label>
             <input
               class="form-control"
               type="text"
@@ -19,6 +20,7 @@
             >
           </div>
           <div class="col-md-4 form-group">
+            <label>Email</label>
             <input
               class="form-control"
               type="text"
@@ -26,6 +28,7 @@
             >
           </div>
           <div class="col-md-4 form-group">
+            <label>Phone</label>
             <input
               class="form-control"
               type="text"
@@ -35,6 +38,7 @@
         </div>
         <div class="form-row">
           <div class="form-group col-md-12">
+            <label>Comments</label>
             <textarea
               class="form-control"
               rows="10"
