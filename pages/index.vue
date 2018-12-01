@@ -15,6 +15,7 @@
                     v-model="checkin"
                     placeholder="Check-In"
                     input-class="form-control form-control-lg"
+                    format="MMM dd yyyy"
                     @selected="checkinSelected"/>
                 </div>
                 <div class="form-group col-md-3">
@@ -23,7 +24,8 @@
                     :disabled-dates="checkin ? { to: addDays(checkin, 1) } : { to: new Date() }"
                     v-model="checkout"
                     placeholder="Check-Out"
-                    input-class="form-control form-control-lg" />
+                    input-class="form-control form-control-lg"
+                    format="MMM dd yyyy" />
                 </div>
                 <div class="form-group col-md-2">
                   <label style="color: white">Adults</label>
