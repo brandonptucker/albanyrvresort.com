@@ -42,11 +42,10 @@
                 <div
                   class="form-group"
                   style="padding-left: 5px; padding-right: 5px">
-                  <a
+                  <router-link
                     class="btn btn-lg btn-primary"
                     style="margin-top: 32px"
-                    href="#"
-                    @click="submit">Book Now</a>
+                    to="/reservations">Book Now</router-link>
                 </div>
               </div>
             </form>
@@ -160,10 +159,33 @@ export default {
           name: 'A Google User',
         },
       ],
-      checkin: null,
-      checkout: null,
-      adults: 1,
     };
+  },
+  computed: {
+    checkin: {
+      get() {
+        return this.$store.state.checkin;
+      },
+      set(value) {
+        this.$store.commit('updateCheckin', value);
+      },
+    },
+    checkout: {
+      get() {
+        return this.$store.state.checkout;
+      },
+      set(value) {
+        this.$store.commit('updateCheckout', value);
+      },
+    },
+    adults: {
+      get() {
+        return this.$store.state.adults;
+      },
+      set(value) {
+        this.$store.commit('updateAdults', value);
+      },
+    },
   },
   methods: {
     checkinSelected(selected) {
@@ -177,11 +199,6 @@ export default {
       const d = new Date(date);
       d.setDate(date.getDate() + days);
       return d;
-    },
-    submit() {
-      console.log(`checkin: ${this.checkin}`);
-      console.log(`checkout: ${this.checkout}`);
-      console.log(`adults: ${this.adults}`);
     },
   },
   head() {
