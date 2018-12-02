@@ -9,55 +9,69 @@
         />
         Reserve Your Site
       </h2>
-      <form>
+      <form @submit.prevent="submit">
         <div class="form-row">
           <div class="col-md-4 form-group">
             <label>Name</label>
             <input
-              class="form-control"
+              v-validate="'required'"
+              :class="errors.has('name') ? 'form-control is-invalid' : 'form-control'"
               type="text"
+              name="name"
               placeholder="Name"
-              required
             >
+            <div class="invalid-feedback">{{ errors.first('name') }}</div>
           </div>
           <div class="col-md-4 form-group">
             <label>Email</label>
             <input
-              class="form-control"
+              v-validate="'required|email'"
+              :class="errors.has('email') ? 'form-control is-invalid' : 'form-control'"
               type="email"
+              name="email"
               placeholder="Email"
-              required
             >
+            <div class="invalid-feedback">{{ errors.first('email') }}</div>
           </div>
           <div class="col-md-4 form-group">
             <label>Phone</label>
             <input
-              class="form-control"
+              v-validate="'required|numeric|digits:10'"
+              :class="errors.has('phone') ? 'form-control is-invalid' : 'form-control'"
               type="tel"
+              name="phone"
               placeholder="Phone"
-              required
             >
+            <div class="invalid-feedback">{{ errors.first('phone') }}</div>
           </div>
         </div>
         <div class="form-row">
           <div class="col-md-3 form-group">
             <label>Check In</label>
             <datepicker
+              v-validate="'required'"
               :disabled-dates="{ to: new Date() }"
               v-model="checkin"
+              :input-class="errors.has('checkin') ? 'form-control is-invalid' : 'form-control'"
+              name="checkin"
               placeholder="Check-In"
-              input-class="form-control"
               format="MMM dd yyyy"
-              @selected="checkinSelected" />
+              @selected="checkinSelected"
+              @closed="$validator.validate('checkin')" />
+            <div style="margin-top: 0.25rem; font-size: 80%; color: #dc3545">{{ errors.first('checkin') }}</div>
           </div>
           <div class="col-md-3 form-group">
             <label>Check Out</label>
             <datepicker
+              v-validate="'required'"
               :disabled-dates="checkin ? { to: addDays(checkin, 1) } : { to: new Date() }"
               v-model="checkout"
+              :input-class="errors.has('checkout') ? 'form-control is-invalid' : 'form-control'"
+              name="checkout"
               placeholder="Check-Out"
-              input-class="form-control"
-              format="MMM dd yyyy" />
+              format="MMM dd yyyy"
+              @closed="$validator.validate('checkout')" />
+            <div style="margin-top: 0.25rem; font-size: 80%; color: #dc3545">{{ errors.first('checkout') }}</div>
           </div>
           <div class="col-md-3 form-group">
             <label>Adults</label>
@@ -157,6 +171,15 @@ export default {
       const d = new Date(date);
       d.setDate(date.getDate() + days);
       return d;
+    },
+    submit() {
+      this.$validator.validateAll().then(result => {
+        if (result) {
+          console.log('Submit form');
+          return;
+        }
+        console.log('Correct errors');
+      });
     },
   },
 };
