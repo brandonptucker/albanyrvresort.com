@@ -1,0 +1,12 @@
+patch-package
+--- a/node_modules/vuejs-datepicker/dist/vuejs-datepicker.esm.js
++++ b/node_modules/vuejs-datepicker/dist/vuejs-datepicker.esm.js
+@@ -418,7 +418,7 @@ var DateInput = {render: function(){var _vm=this;var _h=_vm.$createElement;var _
+         this.typedDate = null;
+       }
+ 
+-      this.$emit('closeCalendar');
++      this.$emit('closeCalendar', true);
+     },
+     /**
+      * emit a clearDate event

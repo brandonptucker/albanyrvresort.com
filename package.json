@@ -5,7 +5,8 @@
     "dev": "nuxt",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "generate": "nuxt generate",
-    "deploy": "aws s3 sync --acl public-read --delete dist/ s3://albanyrvresort.com"
+    "deploy": "aws s3 sync --acl public-read --delete dist/ s3://albanyrvresort.com",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.2",
@@ -30,6 +31,7 @@
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-vue": "^4.7.1",
     "node-sass": "^4.9.4",
+    "patch-package": "^5.1.1",
     "sass-loader": "^7.1.0"
   }
 }
