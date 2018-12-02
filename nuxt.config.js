@@ -33,5 +33,5 @@ export default {
     ],
     title: 'Albany RV Resort',
   },
-  plugins: ['~/plugins/font-awesome'],
+  plugins: ['~/plugins/font-awesome', '~/plugins/vee-validate'],
 };
