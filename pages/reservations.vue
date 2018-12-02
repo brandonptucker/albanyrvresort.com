@@ -47,7 +47,7 @@
         </div>
         <div class="form-row">
           <div class="col-md-3 form-group">
-            <label>Check In</label>
+            <label>Check-In</label>
             <datepicker
               v-validate="'required'"
               :disabled-dates="{ to: new Date() }"
@@ -61,7 +61,7 @@
             <div style="margin-top: 0.25rem; font-size: 80%; color: #dc3545">{{ errors.first('checkin') }}</div>
           </div>
           <div class="col-md-3 form-group">
-            <label>Check Out</label>
+            <label>Check-Out</label>
             <datepicker
               v-validate="'required'"
               :disabled-dates="checkin ? { to: addDays(checkin, 1) } : { to: new Date() }"
