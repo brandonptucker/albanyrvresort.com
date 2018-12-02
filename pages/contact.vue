@@ -53,7 +53,7 @@
               :class="errors.has('comments') ? 'form-control is-invalid' : 'form-control'"
               rows="10"
               name="comments"
-              placeholder="Message"
+              placeholder="Comments"
             />
             <div class="invalid-feedback">{{ errors.first('comments') }}</div>
           </div>
