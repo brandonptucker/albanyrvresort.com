@@ -16,6 +16,7 @@
             <input
               v-validate="'required'"
               :class="errors.has('name') ? 'form-control is-invalid' : 'form-control'"
+              v-model="name"
               type="text"
               name="name"
               placeholder="Name"
@@ -27,6 +28,7 @@
             <input
               v-validate="'required|email'"
               :class="errors.has('email') ? 'form-control is-invalid' : 'form-control'"
+              v-model="email"
               type="email"
               name="email"
               placeholder="Email"
@@ -38,6 +40,7 @@
             <input
               v-validate="'required|numeric|digits:10'"
               :class="errors.has('phone') ? 'form-control is-invalid' : 'form-control'"
+              v-model="phone"
               type="tel"
               name="phone"
               placeholder="Phone"
@@ -103,16 +106,39 @@
           <div class="form-group col-md-12">
             <label>Comments</label>
             <textarea
+              v-model="comments"
               class="form-control"
               rows="10"
               placeholder="Comments"
             />
           </div>
         </div>
+        <div
+          v-if="errors.items.length > 0"
+          class="alert alert-danger"
+          role="alert">
+          Please correct the validation errors above.
+        </div>
+        <div
+          v-if="showError"
+          class="alert alert-danger"
+          role="alert">
+          An error was encountered while submitting the form. Please try again later or call us at <strong>(229) 431-2229</strong>.
+        </div>
+        <div
+          v-if="showSuccess"
+          class="alert alert-success"
+          role="alert">
+          The form was submitted successfully. Please allow 24 hours for us to process this request.
+        </div>
         <button
+          :disabled="submitDisabled"
           class="btn btn-primary col-md-12"
         >
-          Send
+          <font-awesome-icon
+            v-if="submitDisabled"
+            icon="spinner"
+            spin /> Send
         </button>
       </form>
     </div>
@@ -120,8 +146,26 @@
 </template>
 
 <script>
+import { post } from 'axios';
 import Datepicker from 'vuejs-datepicker';
 import Hero from '../components/Hero.vue';
+
+function buildData(data, state) {
+  return {
+    myEmail: 'info@albanyrvresort.com',
+    email: data.email,
+    subject: `Reservation form: ${data.name}`,
+    message: `New submission from http://albanyrvresort.com/reservations.\n\nName:\n${
+      data.name
+    }\n\nEmail:\n${data.email}\n\nPhone:\n${
+      data.phone
+    }\n\nCheck-In:\n${state.checkin.toDateString()}\n\nCheck-Out:\n${state.checkout.toDateString()}\n\nAdults:\n${
+      state.adults
+    }\n\nChildren:\n${data.children}\n\nComments:\n${
+      data.comments
+    }\n\nTimestamp:\n${new Date()}`,
+  };
+}
 
 export default {
   components: {
@@ -130,7 +174,14 @@ export default {
   },
   data() {
     return {
+      name: null,
+      email: null,
+      phone: null,
       children: 0,
+      comments: null,
+      submitDisabled: false,
+      showError: false,
+      showSuccess: false,
     };
   },
   computed: {
@@ -172,14 +223,41 @@ export default {
       d.setDate(date.getDate() + days);
       return d;
     },
-    submit() {
-      this.$validator.validateAll().then(result => {
-        if (result) {
-          console.log('Submit form');
-          return;
+    clearForm() {
+      this.name = null;
+      this.email = null;
+      this.phone = null;
+      this.checkin = null;
+      this.checkout = null;
+      this.adults = 1;
+      this.children = 0;
+      this.comments = null;
+    },
+    async submit() {
+      this.resetAlerts();
+      const result = await this.$validator.validateAll();
+      if (result) {
+        const data = buildData(this.$data, this.$store.state);
+        try {
+          this.submitDisabled = true;
+          const url =
+            process.env.NODE_ENV === 'development'
+              ? 'http://localhost:3001/email'
+              : 'change me';
+          await post(url, data);
+          this.clearForm();
+          this.$nextTick(() => this.$validator.reset());
+          this.showSuccess = true;
+        } catch (e) {
+          this.showError = true;
+        } finally {
+          this.submitDisabled = false;
         }
-        console.log('Correct errors');
-      });
+      }
+    },
+    resetAlerts() {
+      this.$data.showError = false;
+      this.$data.showSuccess = false;
     },
   },
 };
