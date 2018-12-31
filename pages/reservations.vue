@@ -243,7 +243,7 @@ export default {
           const url =
             process.env.NODE_ENV === 'development'
               ? 'http://localhost:3001/email'
-              : 'change me';
+              : '***REMOVED***';
           await post(url, data);
           this.clearForm();
           this.$nextTick(() => this.$validator.reset());
