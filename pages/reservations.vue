@@ -243,7 +243,7 @@ export default {
           const url =
             process.env.NODE_ENV === 'development'
               ? 'http://localhost:3001/email'
-              : 'change me';
+              : 'https://6q9vy5rmva.execute-api.us-east-1.amazonaws.com/production/email';
           await post(url, data);
           this.clearForm();
           this.$nextTick(() => this.$validator.reset());
