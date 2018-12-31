@@ -130,11 +130,10 @@ export default {
   },
   methods: {
     clearForm() {
-      const data = this.$data;
-      data.name = null;
-      data.email = null;
-      data.phone = null;
-      data.comments = null;
+      this.name = null;
+      this.email = null;
+      this.phone = null;
+      this.comments = null;
     },
     async submit() {
       this.resetAlerts();
@@ -142,7 +141,7 @@ export default {
       if (result) {
         const data = buildData(this.$data);
         try {
-          this.$data.submitDisabled = true;
+          this.submitDisabled = true;
           const url =
             process.env.NODE_ENV === 'development'
               ? 'http://localhost:3001/email'
@@ -150,17 +149,17 @@ export default {
           await post(url, data);
           this.clearForm();
           this.$nextTick(() => this.$validator.reset());
-          this.$data.showSuccess = true;
+          this.showSuccess = true;
         } catch (e) {
-          this.$data.showError = true;
+          this.showError = true;
         } finally {
-          this.$data.submitDisabled = false;
+          this.submitDisabled = false;
         }
       }
     },
     resetAlerts() {
-      this.$data.showError = false;
-      this.$data.showSuccess = false;
+      this.showError = false;
+      this.showSuccess = false;
     },
   },
 };
