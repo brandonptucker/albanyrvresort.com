@@ -10,6 +10,7 @@ import {
   faCircle,
   faEnvelope,
   faCalendarAlt,
+  faSpinner,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faFacebook,
@@ -32,7 +33,8 @@ library.add(
   faWifi,
   faCircle,
   faEnvelope,
-  faCalendarAlt
+  faCalendarAlt,
+  faSpinner
 );
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
