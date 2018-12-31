@@ -1,7 +1,6 @@
 <template>
   <div
-    class="hero"
-    style="background-image: url(https://source.unsplash.com/random)">
+    class="hero">
     <div style="background: rgba(0, 0, 0, .5)">
       <div
         class="container text-center"

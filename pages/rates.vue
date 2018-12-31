@@ -100,3 +100,20 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.hero {
+  background: url(/rates/hero-sm.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media screen and (min-width: 576px) {
+  .hero {
+    background-image: url(/rates/hero-md.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(/rates/hero-lg.jpg);
+  }
+}
+</style>

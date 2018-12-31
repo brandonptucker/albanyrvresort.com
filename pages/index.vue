@@ -1,7 +1,7 @@
 <template>
   <main
     role="main">
-    <div style="background-image: url(https://source.unsplash.com/random)">
+    <div class="hero">
       <div class="overlay">
         <div class="container d-flex h-100">
           <div class="m-auto">
@@ -232,6 +232,21 @@ export default {
 @media screen and (max-width: 767px) {
   .overlay {
     min-height: 768px;
+  }
+}
+
+.hero {
+  background: url(/index/hero-sm.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media screen and (min-width: 576px) {
+  .hero {
+    background-image: url(/index/hero-md.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(/index/hero-lg.jpg);
   }
 }
 </style>
