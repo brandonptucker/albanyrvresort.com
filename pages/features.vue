@@ -86,3 +86,20 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.hero {
+  background: url(/features/hero-sm.jpg) no-repeat center bottom;
+  background-size: cover;
+}
+@media screen and (min-width: 576px) {
+  .hero {
+    background-image: url(/features/hero-md.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(/features/hero-lg.jpg);
+  }
+}
+</style>

@@ -164,3 +164,20 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.hero {
+  background: url(/contact/hero-sm.jpg) no-repeat center center;
+  background-size: cover;
+}
+@media screen and (min-width: 576px) {
+  .hero {
+    background-image: url(/contact/hero-md.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(/contact/hero-lg.jpg);
+  }
+}
+</style>
