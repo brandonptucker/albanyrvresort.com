@@ -5,513 +5,261 @@
       <div class="row">
         <div class="col-md-4">
           <a
-            href="1.jpg"
+            href="/gallery/1.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="1_thumb.jpg"
+              src="/gallery/1_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="4.jpg"
+            href="/gallery/4.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="4_thumb.jpg"
+              src="/gallery/4_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="7.jpg"
+            href="/gallery/7.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="7_thumb.jpg"
+              src="/gallery/7_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="10.jpg"
+            href="/gallery/10.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="10_thumb.jpg"
+              src="/gallery/10_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="13.jpg"
+            href="/gallery/13.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="13_thumb.jpg"
+              src="/gallery/13_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="16.jpg"
+            href="/gallery/16.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="16_thumb.jpg"
+              src="/gallery/16_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="19.jpg"
+            href="/gallery/19.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="19_thumb.jpg"
+              src="/gallery/19_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="22.jpg"
+            href="/gallery/22.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="22_thumb.jpg"
+              src="/gallery/22_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="25.jpg"
+            href="/gallery/25.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="25_thumb.jpg"
+              src="/gallery/25_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="28.jpg"
+            href="/gallery/28.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="28_thumb.jpg"
+              src="/gallery/28_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="31.jpg"
+            href="/gallery/31.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="31_thumb.jpg"
+              src="/gallery/31_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="34.jpg"
+            href="/gallery/34.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="34_thumb.jpg"
+              src="/gallery/34_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="37.jpg"
+            href="/gallery/37.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="37_thumb.jpg"
+              src="/gallery/37_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="40.jpg"
+            href="/gallery/40.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="40_thumb.jpg"
+              src="/gallery/40_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="43.jpg"
+            href="/gallery/43.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="43_thumb.jpg"
+              src="/gallery/43_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="46.jpg"
+            href="/gallery/46.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="46_thumb.jpg"
+              src="/gallery/46_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="49.jpg"
+            href="/gallery/49.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="49_thumb.jpg"
+              src="/gallery/49_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="52.jpg"
+            href="/gallery/52.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="52_thumb.jpg"
+              src="/gallery/52_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="55.jpg"
+            href="/gallery/55.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="55_thumb.jpg"
+              src="/gallery/55_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="58.jpg"
+            href="/gallery/58.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="58_thumb.jpg"
+              src="/gallery/58_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="61.jpg"
+            href="/gallery/61.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="61_thumb.jpg"
+              src="/gallery/61_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="64.jpg"
+            href="/gallery/64.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="64_thumb.jpg"
+              src="/gallery/64_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="67.jpg"
+            href="/gallery/67.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="67_thumb.jpg"
+              src="/gallery/67_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="70.jpg"
+            href="/gallery/70.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="70_thumb.jpg"
+              src="/gallery/70_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="73.jpg"
+            href="/gallery/73.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="73_thumb.jpg"
+              src="/gallery/73_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="76.jpg"
+            href="/gallery/76.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="76_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a
-            href="2.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="2_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="5.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="5_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="8.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="8_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="11.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="11_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="14.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="14_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="17.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="17_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="20.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="20_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="23.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="23_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="26.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="26_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="29.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="29_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="32.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="32_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="35.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="35_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="38.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="38_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="41.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="41_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="44.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="44_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="47.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="47_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="50.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="50_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="53.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="53_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="56.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="56_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="59.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="59_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="62.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="62_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="65.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="65_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="68.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="68_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="71.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="71_thumb.jpg"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="76.jpg"
-            data-fancybox="gallery"
-          >
-            <img
-              src="76_thumb.jpg"
+              src="/gallery/76_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
@@ -519,261 +267,513 @@
         </div>
         <div class="col-md-4">
           <a
-            href="3.jpg"
+            href="/gallery/2.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="3_thumb.jpg"
+              src="/gallery/2_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="6.jpg"
+            href="/gallery/5.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="6_thumb.jpg"
+              src="/gallery/5_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="9.jpg"
+            href="/gallery/8.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="9_thumb.jpg"
+              src="/gallery/8_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="12.jpg"
+            href="/gallery/11.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="12_thumb.jpg"
+              src="/gallery/11_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="15.jpg"
+            href="/gallery/14.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="15_thumb.jpg"
+              src="/gallery/14_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="18.jpg"
+            href="/gallery/17.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="18_thumb.jpg"
+              src="/gallery/17_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="21.jpg"
+            href="/gallery/20.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="21_thumb.jpg"
+              src="/gallery/20_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="24.jpg"
+            href="/gallery/23.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="24_thumb.jpg"
+              src="/gallery/23_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="27.jpg"
+            href="/gallery/26.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="27_thumb.jpg"
+              src="/gallery/26_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="30.jpg"
+            href="/gallery/29.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="30_thumb.jpg"
+              src="/gallery/29_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="33.jpg"
+            href="/gallery/32.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="33_thumb.jpg"
+              src="/gallery/32_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="36.jpg"
+            href="/gallery/35.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="36_thumb.jpg"
+              src="/gallery/35_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="39.jpg"
+            href="/gallery/38.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="39_thumb.jpg"
+              src="/gallery/38_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="42.jpg"
+            href="/gallery/41.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="42_thumb.jpg"
+              src="/gallery/41_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="45.jpg"
+            href="/gallery/44.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="45_thumb.jpg"
+              src="/gallery/44_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="48.jpg"
+            href="/gallery/47.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="48_thumb.jpg"
+              src="/gallery/47_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="51.jpg"
+            href="/gallery/50.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="51_thumb.jpg"
+              src="/gallery/50_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="54.jpg"
+            href="/gallery/53.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="54_thumb.jpg"
+              src="/gallery/53_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="57.jpg"
+            href="/gallery/56.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="57_thumb.jpg"
+              src="/gallery/56_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="60.jpg"
+            href="/gallery/59.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="60_thumb.jpg"
+              src="/gallery/59_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="63.jpg"
+            href="/gallery/62.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="63_thumb.jpg"
+              src="/gallery/62_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="66.jpg"
+            href="/gallery/65.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="66_thumb.jpg"
+              src="/gallery/65_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="69.jpg"
+            href="/gallery/68.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="69_thumb.jpg"
+              src="/gallery/68_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="72.jpg"
+            href="/gallery/71.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="72_thumb.jpg"
+              src="/gallery/71_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="75.jpg"
+            href="/gallery/76.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="75_thumb.jpg"
+              src="/gallery/76_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a
+            href="/gallery/3.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/3_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
           </a>
           <a
-            href="74.jpg"
+            href="/gallery/6.JPG"
             data-fancybox="gallery"
           >
             <img
-              src="74_thumb.jpg"
+              src="/gallery/6_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/9.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/9_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/12.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/12_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/15.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/15_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/18.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/18_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/21.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/21_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/24.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/24_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/27.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/27_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/30.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/30_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/33.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/33_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/36.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/36_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/39.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/39_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/42.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/42_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/45.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/45_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/48.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/48_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/51.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/51_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/54.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/54_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/57.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/57_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/60.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/60_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/63.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/63_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/66.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/66_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/69.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/69_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/72.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/72_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/75.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/75_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/74.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/74_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
