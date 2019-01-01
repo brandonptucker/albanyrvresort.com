@@ -29,7 +29,9 @@
             <li>
               <a
                 class="facebook"
-                href="#"><font-awesome-icon :icon="['fab', 'facebook']" /> Facebook</a>
+                href="https://www.facebook.com/Albany-RV-Resort-Inc-111460132227079/"
+                target="_blank"
+              ><font-awesome-icon :icon="['fab', 'facebook']" /> Facebook</a>
             </li>
             <li>
               <a
@@ -39,7 +41,9 @@
             <li>
               <a
                 class="twitter"
-                href="#"><font-awesome-icon :icon="['fab', 'twitter']" /> Twitter</a>
+                href="https://twitter.com/albanyrvresort"
+                target="_blank"
+              ><font-awesome-icon :icon="['fab', 'twitter']" /> Twitter</a>
             </li>
           </ul>
         </div>
