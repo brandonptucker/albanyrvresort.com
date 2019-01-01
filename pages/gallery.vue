@@ -254,16 +254,6 @@
               style="margin-bottom: 30px"
             >
           </a>
-          <a
-            href="/gallery/76.JPG"
-            data-fancybox="gallery"
-          >
-            <img
-              src="/gallery/76_thumb.JPG"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
         </div>
         <div class="col-md-4">
           <a
@@ -502,6 +492,16 @@
           >
             <img
               src="/gallery/71_thumb.JPG"
+              class="img-fluid"
+              style="margin-bottom: 30px"
+            >
+          </a>
+          <a
+            href="/gallery/74.JPG"
+            data-fancybox="gallery"
+          >
+            <img
+              src="/gallery/74_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
@@ -764,16 +764,6 @@
           >
             <img
               src="/gallery/75_thumb.JPG"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
-          <a
-            href="/gallery/74.JPG"
-            data-fancybox="gallery"
-          >
-            <img
-              src="/gallery/74_thumb.JPG"
               class="img-fluid"
               style="margin-bottom: 30px"
             >
