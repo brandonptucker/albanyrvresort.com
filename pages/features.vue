@@ -69,9 +69,11 @@
       </p>
       <h4>Team RV</h4>
       <p class="mb-5">
-        <a href="http://teamrvinc.com">Team RV</a> is located directly next
-        door. They offer RV parts, sales, service, and a propane filling station.
-        On-site repair available with most repairs.
+        <a
+          href="http://teamrvinc.com"
+          target="_blank">Team RV</a> is located directly next
+          door. They offer RV parts, sales, service, and a propane filling station.
+          On-site repair available with most repairs.
       </p>
     </div>
   </main>
