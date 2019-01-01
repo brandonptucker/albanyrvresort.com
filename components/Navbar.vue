@@ -64,6 +64,7 @@
             class="nav-item nav-link"
             href="/brochure.pdf"
             target="_blank"
+            rel="noopener"
           >Map &amp; Rules</a>
           <router-link
             active-class="active"

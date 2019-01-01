@@ -13,6 +13,7 @@
             class="facebook"
             href="https://www.facebook.com/Albany-RV-Resort-Inc-111460132227079/"
             target="_blank"
+            rel="noopener"
           ><font-awesome-icon :icon="['fab', 'facebook']" /> Facebook</a>
         </li>
         <li class="list-inline-item">
@@ -25,6 +26,7 @@
             class="twitter"
             href="https://twitter.com/albanyrvresort"
             target="_blank"
+            rel="noopener"
           ><font-awesome-icon :icon="['fab', 'twitter']" /> Twitter</a>
         </li>
       </ul>
