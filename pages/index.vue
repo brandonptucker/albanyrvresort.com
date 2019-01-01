@@ -9,8 +9,11 @@
             <form>
               <div class="form-row justify-content-center">
                 <div class="form-group col-md-3">
-                  <label style="color: white">Check-In</label>
+                  <label
+                    for="checkin"
+                    style="color: white">Check-In</label>
                   <datepicker
+                    id="checkin"
                     :disabled-dates="{ to: new Date() }"
                     v-model="checkin"
                     placeholder="Check-In"
@@ -19,8 +22,11 @@
                     @selected="checkinSelected"/>
                 </div>
                 <div class="form-group col-md-3">
-                  <label style="color: white">Check-Out</label>
+                  <label
+                    for="checkout"
+                    style="color: white">Check-Out</label>
                   <datepicker
+                    id="checkout"
                     :disabled-dates="checkin ? { to: addDays(checkin, 1) } : { to: new Date() }"
                     v-model="checkout"
                     placeholder="Check-Out"
@@ -28,8 +34,11 @@
                     format="MMM dd yyyy" />
                 </div>
                 <div class="form-group col-md-2">
-                  <label style="color: white">Adults</label>
+                  <label
+                    for="adults"
+                    style="color: white">Adults</label>
                   <select
+                    id="adults"
                     v-model="adults"
                     class="form-control form-control-lg">
                     <option>1</option>
@@ -99,10 +108,12 @@
               class="img-fluid"
               style="margin-bottom: 30px"
               src="/index/rv-site.jpg"
+              alt="Example RV Site"
             >
             <img
               class="img-fluid"
               src="/index/rv-site-1.jpg"
+              alt="Example RV Site"
             >
           </div>
           <div class="col-md-6 align-self-center mb-5 text-center text-white">
