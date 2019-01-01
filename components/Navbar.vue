@@ -7,7 +7,9 @@
         data-target=".navbar-collapse.show"
         to="/"
       >
-        <img src="~/assets/logo.png">
+        <img
+          src="~/assets/logo.png"
+          alt="Albany RV Resort Logo">
       </router-link>
       <router-link
         class="btn btn-primary d-sm-block d-md-none mr-2"

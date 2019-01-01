@@ -11,6 +11,7 @@
             to="/">
             <img
               src="~/assets/logo.png"
+              alt="Albany RV Resort Logo"
               class="mb-2">
           </router-link>
           <p class="mb-5">Albany RV Resort<br>© Copyright 2018<br>All Rights Reserved.</p>
