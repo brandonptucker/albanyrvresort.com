@@ -63,7 +63,7 @@
             icon="bus"
             size="3x"/>
           <h3>Big Rigs</h3>
-          <p>Extra large RV sites designed for accessibility and big rigs</p>
+          <p>Large RV sites designed for accessibility and convenience</p>
         </div>
         <div class="col-md-3 mb-5">
           <font-awesome-icon
@@ -71,7 +71,7 @@
             icon="smile"
             size="3x"/>
           <h3>Friendly Staff</h3>
-          <p>We strive to create a fun camping experience for all</p>
+          <p>We strive for memorable camping experiences</p>
         </div>
         <div class="col-md-3 mb-5">
           <font-awesome-icon
@@ -106,7 +106,7 @@
               class="list-unstyled lead"
               style="color: rgba(255, 255, 255, .5)"
             >
-              <li>82 full hookup campsites</li>
+              <li>93 full hookup campsites</li>
               <li>20 x 40 ft. level cement patios</li>
               <li>Extra large 120 ft. pull thrus</li>
               <li>Spacious, private sites</li>
