@@ -260,6 +260,17 @@ export default {
       this.$data.showSuccess = false;
     },
   },
+  head() {
+    return {
+      titleTemplate: '%s - Request a Reservation',
+      meta: [
+        {
+          name: 'description',
+          content: 'Fill out the form to request a reservation.',
+        },
+      ],
+    };
+  },
 };
 </script>
 

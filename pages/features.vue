@@ -88,6 +88,18 @@ export default {
   components: {
     Hero,
   },
+  head() {
+    return {
+      titleTemplate: '%s - Browse Our Features',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Full hookups, easily accessible sites, free wifi internet, fishing pond, clubhouse, handicap accessible showers/bathrooms, laundry facility, dog park, and pet walk',
+        },
+      ],
+    };
+  },
 };
 </script>
 

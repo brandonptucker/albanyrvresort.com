@@ -219,13 +219,17 @@ export default {
   },
   head() {
     return {
-      titleTemplate: '%s - Home',
+      titleTemplate: '%s - RV Campground Located in Albany, GA.',
       meta: [
-        // hid is used as unique identifier. Do not use `vmid` for it as it will not work
         {
-          hid: 'description',
           name: 'description',
-          content: 'My custom description',
+          content:
+            'Features 93 full hookup RV sites, 20 x 40 ft. level cement patios, Extra large 120 ft. pull thrus, Spacious, private campsites, and easy entry and exit.',
+        },
+        {
+          name: 'keywords',
+          content:
+            'rv, rv resort, campground, park, rv site, camping, albany, ga, georgia, albany rv, albany rv resort, team rv',
         },
       ],
     };

@@ -98,6 +98,18 @@ export default {
     Hero,
     RateCard,
   },
+  head() {
+    return {
+      titleTemplate: '%s - Browse Our Rates',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'We offer nightly, weekly, and monthly rates for 30 and 50 amp service.',
+        },
+      ],
+    };
+  },
 };
 </script>
 
