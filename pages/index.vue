@@ -97,7 +97,12 @@
           <div class="col-md-6 align-self-center mb-5">
             <img
               class="img-fluid"
-              src="https://source.unsplash.com/random"
+              style="margin-bottom: 30px"
+              src="/index/rv-site.jpg"
+            >
+            <img
+              class="img-fluid"
+              src="/index/rv-site-1.jpg"
             >
           </div>
           <div class="col-md-6 align-self-center mb-5 text-center text-white">
