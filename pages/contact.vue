@@ -162,6 +162,18 @@ export default {
       this.showSuccess = false;
     },
   },
+  head() {
+    return {
+      titleTemplate: '%s - Contact Us',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Send us an email, view map, get directions, view our hours of operations, and visit us on Facebook, Instagram, or Twitter.',
+        },
+      ],
+    };
+  },
 };
 </script>
 

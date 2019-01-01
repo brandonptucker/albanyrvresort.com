@@ -793,6 +793,18 @@ export default {
   components: {
     Hero,
   },
+  head() {
+    return {
+      titleTemplate: '%s - Browse Our Gallery',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'View photos of RV sites, clubhouse, pond, ducks, geese, exercise room, laundry, dog park, and dog walk.',
+        },
+      ],
+    };
+  },
 };
 </script>
 
