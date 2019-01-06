@@ -1,3 +1,5 @@
+$primary: #149c6a;
+
 @import '~bootstrap/scss/bootstrap.scss';
 
 .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
