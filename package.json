@@ -7,8 +7,8 @@
     "dev": "nuxt",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "generate": "nuxt generate",
-    "deploy": "aws s3 sync --acl public-read --delete dist/ s3://albanyrvresort.com",
-    "invalidate": "aws cloudfront create-invalidation --distribution-id E3EQ54GQNG6U8S --paths '/*'",
+    "deploy": "aws2 s3 sync --acl public-read --delete dist/ s3://albanyrvresort.com",
+    "invalidate": "aws2 cloudfront create-invalidation --distribution-id E3EQ54GQNG6U8S --paths '/*'",
     "postinstall": "patch-package"
   },
   "dependencies": {
