@@ -36,7 +36,6 @@ export default {
   },
   plugins: [
     { src: '~/plugins/font-awesome' },
-    { src: '~/plugins/ga', ssr: false },
     { src: '~/plugins/vee-validate' },
   ],
 };
