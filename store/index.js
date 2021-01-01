@@ -1,22 +1,19 @@
-import Vuex from 'vuex'; // eslint-disable-line
-
-const createStore = () => new Vuex.Store({
-  state: {
-    checkin: null,
-    checkout: null,
-    adults: 1,
-  },
-  mutations: {
-    updateCheckin(state, value) {
-        state.checkin = value; // eslint-disable-line
-    },
-    updateCheckout(state, value) {
-        state.checkout = value; // eslint-disable-line
-    },
-    updateAdults(state, value) {
-        state.adults = value; // eslint-disable-line
-    },
-  },
+export const state = () => ({
+  checkin: null,
+  checkout: null,
+  adults: 1,
 });
 
-export default createStore;
+export const mutations = {
+  /* eslint-disable no-shadow */
+  /* eslint-disable no-param-reassign */
+  updateCheckin(state, value) {
+    state.checkin = value;
+  },
+  updateCheckout(state, value) {
+    state.checkout = value;
+  },
+  updateAdults(state, value) {
+    state.adults = value;
+  },
+};
