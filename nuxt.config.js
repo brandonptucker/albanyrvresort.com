@@ -1,6 +1,7 @@
 const webpack = require('webpack'); // eslint-disable-line
 
 export default {
+  target: 'static',
   build: {
     extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
