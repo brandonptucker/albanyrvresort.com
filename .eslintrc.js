@@ -5,11 +5,7 @@ module.exports = {
     node: true,
   },
   parserOptions: {
-    ecmaVersion: 2017
+    ecmaVersion: 2017,
   },
-  extends: [
-    'airbnb-base',
-    'plugin:vue/recommended',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['airbnb-base', 'plugin:vue/recommended'],
 };
