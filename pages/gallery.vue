@@ -506,16 +506,6 @@
               style="margin-bottom: 30px"
             >
           </a>
-          <a
-            href="/gallery/76.JPG"
-            data-fancybox="gallery"
-          >
-            <img
-              src="/gallery/76_thumb.JPG"
-              class="img-fluid"
-              style="margin-bottom: 30px"
-            >
-          </a>
         </div>
         <div class="col-md-4">
           <a
