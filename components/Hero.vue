@@ -1,17 +1,22 @@
 <template>
   <div
-    class="hero">
+    class="hero"
+  >
     <div style="background: rgba(0, 0, 0, .5)">
       <div
         class="container text-center"
         style="padding-top: 10rem; padding-bottom: 10rem"
       >
-        <h1 class="text-white">{{ title }}</h1>
+        <h1 class="text-white">
+          {{ title }}
+        </h1>
         <p
           class="lead"
           style="color: rgba(255, 255, 255, .75)"
         >
-          <router-link to="/">Home</router-link> / {{ title }}
+          <router-link to="/">
+            Home
+          </router-link> / {{ title }}
         </p>
       </div>
     </div>

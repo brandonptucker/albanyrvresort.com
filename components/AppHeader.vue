@@ -3,7 +3,8 @@
     <div class="container d-flex flex-column flex-md-row pt-2">
       <a
         class="mr-3 mb-1"
-        href="tel:1-229-431-2229"><font-awesome-icon icon="phone" /> (229) 431-2229</a>
+        href="tel:1-229-431-2229"
+      ><font-awesome-icon icon="phone" /> (229) 431-2229</a>
       <div class="mr-auto mb-1">
         <font-awesome-icon icon="map-marker-alt" /> 1202 Liberty Expy SE Albany, GA 31705
       </div>
@@ -19,7 +20,8 @@
         <li class="list-inline-item">
           <a
             class="instagram"
-            href="#"><font-awesome-icon :icon="['fab', 'instagram']" /> Instagram</a>
+            href="#"
+          ><font-awesome-icon :icon="['fab', 'instagram']" /> Instagram</a>
         </li>
         <li class="list-inline-item">
           <a

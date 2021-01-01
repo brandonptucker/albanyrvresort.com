@@ -34,7 +34,7 @@ library.add(
   faCircle,
   faEnvelope,
   faCalendarAlt,
-  faSpinner
+  faSpinner,
 );
 
-Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component('FontAwesomeIcon', FontAwesomeIcon);

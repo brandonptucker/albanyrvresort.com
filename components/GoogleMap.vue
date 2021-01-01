@@ -8,8 +8,7 @@
 <script>
 export default {
   mounted() {
-    const src =
-      'https://maps.googleapis.com/maps/api/js?key=AIzaSyACjoJo-MBep3Rbcs757lP9Omo3pbfYfGM&callback=initMap';
+    const src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyACjoJo-MBep3Rbcs757lP9Omo3pbfYfGM&callback=initMap';
     if (!document.querySelector(`script[src='${src}']`)) {
       window.initMap = this.initMap;
       this.loadJS(src);

@@ -772,12 +772,14 @@
       </div>
     </div>
   </main>
-</template><script>
+</template>
+
+<script>
 import Hero from '../components/Hero.vue';
 
 if (process.browser) {
-  require('@fancyapps/fancybox'); // eslint-disable-line
-  require('@fancyapps/fancybox/dist/jquery.fancybox.css'); // eslint-disable-line
+    require('@fancyapps/fancybox'); // eslint-disable-line
+    require('@fancyapps/fancybox/dist/jquery.fancybox.css'); // eslint-disable-line
 }
 export default {
   components: {
@@ -790,7 +792,7 @@ export default {
         {
           name: 'description',
           content:
-            'View photos of RV sites, clubhouse, pond, ducks, geese, exercise room, laundry, dog park, and dog walk.',
+    'View photos of RV sites, clubhouse, pond, ducks, geese, exercise room, laundry, dog park, and dog walk.',
         },
       ],
     };
@@ -803,6 +805,7 @@ export default {
   background: url(/gallery/hero-sm.jpg) no-repeat center bottom;
   background-size: cover;
 }
+
 @media screen and (min-width: 576px) {
   .hero {
     background-image: url(/gallery/hero-md.jpg);
