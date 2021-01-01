@@ -8,8 +8,7 @@
 <script>
 export default {
   mounted() {
-    const src =
-      'https://maps.googleapis.com/maps/api/js?key=***REMOVED***&callback=initMap';
+    const src = 'https://maps.googleapis.com/maps/api/js?key=***REMOVED***&callback=initMap';
     if (!document.querySelector(`script[src='${src}']`)) {
       window.initMap = this.initMap;
       this.loadJS(src);

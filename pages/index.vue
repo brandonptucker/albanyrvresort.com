@@ -1,46 +1,55 @@
 <template>
   <main
-    role="main">
+    role="main"
+  >
     <div class="hero">
       <div class="overlay">
         <div class="container d-flex h-100">
           <div class="m-auto">
-            <p class="display-4 text-white text-center mb-4">Reserve Your Site Today!</p>
+            <p class="display-4 text-white text-center mb-4">
+              Reserve Your Site Today!
+            </p>
             <form>
               <div class="form-row justify-content-center">
                 <div class="form-group col-md-3">
                   <label
                     for="checkin"
-                    style="color: white">Check-In</label>
+                    style="color: white"
+                  >Check-In</label>
                   <datepicker
                     id="checkin"
-                    :disabled-dates="{ to: new Date() }"
                     v-model="checkin"
+                    :disabled-dates="{ to: new Date() }"
                     placeholder="Check-In"
                     input-class="form-control form-control-lg"
                     format="MMM dd yyyy"
-                    @selected="checkinSelected"/>
+                    @selected="checkinSelected"
+                  />
                 </div>
                 <div class="form-group col-md-3">
                   <label
                     for="checkout"
-                    style="color: white">Check-Out</label>
+                    style="color: white"
+                  >Check-Out</label>
                   <datepicker
                     id="checkout"
-                    :disabled-dates="checkin ? { to: addDays(checkin, 1) } : { to: new Date() }"
                     v-model="checkout"
+                    :disabled-dates="checkin ? { to: addDays(checkin, 1) } : { to: new Date() }"
                     placeholder="Check-Out"
                     input-class="form-control form-control-lg"
-                    format="MMM dd yyyy" />
+                    format="MMM dd yyyy"
+                  />
                 </div>
                 <div class="form-group col-md-2">
                   <label
                     for="adults"
-                    style="color: white">Adults</label>
+                    style="color: white"
+                  >Adults</label>
                   <select
                     id="adults"
                     v-model="adults"
-                    class="form-control form-control-lg">
+                    class="form-control form-control-lg"
+                  >
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -50,11 +59,15 @@
                 </div>
                 <div
                   class="form-group"
-                  style="padding-left: 5px; padding-right: 5px">
+                  style="padding-left: 5px; padding-right: 5px"
+                >
                   <router-link
                     class="btn btn-lg btn-primary"
                     style="margin-top: 32px"
-                    to="/reservations">Book Now</router-link>
+                    to="/reservations"
+                  >
+                    Book Now
+                  </router-link>
                 </div>
               </div>
             </form>
@@ -64,13 +77,16 @@
     </div>
     <div class="container mt-5 text-center">
       <h1>Welcome</h1>
-      <p class="lead mb-5">Albany RV Resort is a family owned and operated RV campground located in Albany, GA.</p>
+      <p class="lead mb-5">
+        Albany RV Resort is a family owned and operated RV campground located in Albany, GA.
+      </p>
       <div class="row">
         <div class="col-md-3 mb-5">
           <font-awesome-icon
             class="text-primary mb-3"
             icon="bus"
-            size="3x"/>
+            size="3x"
+          />
           <h3>Big Rigs</h3>
           <p>Large RV sites designed for accessibility and convenience</p>
         </div>
@@ -78,7 +94,8 @@
           <font-awesome-icon
             class="text-primary mb-3"
             icon="smile"
-            size="3x"/>
+            size="3x"
+          />
           <h3>Friendly Staff</h3>
           <p>We strive for memorable camping experiences</p>
         </div>
@@ -86,7 +103,8 @@
           <font-awesome-icon
             class="text-primary mb-3"
             icon="fish"
-            size="3x"/>
+            size="3x"
+          />
           <h3>Lake Tucker</h3>
           <p>Stocked fishing pond with bass, bream, and catfish</p>
         </div>
@@ -94,7 +112,8 @@
           <font-awesome-icon
             class="text-primary mb-3"
             icon="wifi"
-            size="3x"/>
+            size="3x"
+          />
           <h3>Free Wifi</h3>
           <p>High speed wireless internet at no additional cost</p>
         </div>
@@ -117,7 +136,9 @@
             >
           </div>
           <div class="col-md-6 align-self-center mb-5 text-center text-white">
-            <h2 class="mb-5">Our RV Sites</h2>
+            <h2 class="mb-5">
+              Our RV Sites
+            </h2>
             <ul
               class="list-unstyled lead"
               style="color: rgba(255, 255, 255, .5)"
@@ -133,8 +154,10 @@
       </div>
     </div>
     <div class="container my-5 text-center">
-      <h2 class="mb-5">Testimonials</h2>
-      <testimonials :testimonials="testimonials"/>
+      <h2 class="mb-5">
+        Testimonials
+      </h2>
+      <testimonials :testimonials="testimonials" />
     </div>
     <google-map />
   </main>
@@ -173,6 +196,23 @@ export default {
           text:
             '5 stars Love, Love, Love this park! Staff is tremendously helpful, Clean well maintained facilities. Spacious Lots, Quiet. Will be back!',
           name: 'A Google User',
+        },
+      ],
+    };
+  },
+  head() {
+    return {
+      titleTemplate: '%s - RV Campground Located in Albany, GA.',
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Features 93 full hookup RV sites, 20 x 40 ft. level cement patios, Extra large 120 ft. pull thrus, Spacious, private campsites, and easy entry and exit.',
+        },
+        {
+          name: 'keywords',
+          content:
+            'rv, rv resort, campground, park, rv site, camping, albany, ga, georgia, albany rv, albany rv resort, team rv',
         },
       ],
     };
@@ -216,23 +256,6 @@ export default {
       d.setDate(date.getDate() + days);
       return d;
     },
-  },
-  head() {
-    return {
-      titleTemplate: '%s - RV Campground Located in Albany, GA.',
-      meta: [
-        {
-          name: 'description',
-          content:
-            'Features 93 full hookup RV sites, 20 x 40 ft. level cement patios, Extra large 120 ft. pull thrus, Spacious, private campsites, and easy entry and exit.',
-        },
-        {
-          name: 'keywords',
-          content:
-            'rv, rv resort, campground, park, rv site, camping, albany, ga, georgia, albany rv, albany rv resort, team rv',
-        },
-      ],
-    };
   },
 };
 </script>

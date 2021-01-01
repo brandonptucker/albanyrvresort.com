@@ -10,14 +10,17 @@
         <footer
           v-if="testimonials[index].name"
           :key="index"
-          class="blockquote-footer">{{ testimonials[index].name }}</footer>
+          class="blockquote-footer"
+        >
+          {{ testimonials[index].name }}
+        </footer>
       </transition>
     </blockquote>
     <ul class="list-inline">
       <li
         v-for="(testimonial, idx) in testimonials"
-        :class="index === idx ? 'text-primary' : 'text-secondary'"
         :key="idx"
+        :class="index === idx ? 'text-primary' : 'text-secondary'"
         class="list-inline-item"
         @click="index = idx"
       >

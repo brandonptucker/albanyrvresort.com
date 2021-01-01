@@ -14,73 +14,86 @@
           <div class="col-md-4 form-group">
             <label>Name</label>
             <input
+              v-model="name"
               v-validate="'required'"
               :class="errors.has('name') ? 'form-control is-invalid' : 'form-control'"
-              v-model="name"
               type="text"
               name="name"
               placeholder="Name"
             >
-            <div class="invalid-feedback">{{ errors.first('name') }}</div>
+            <div class="invalid-feedback">
+              {{ errors.first('name') }}
+            </div>
           </div>
           <div class="col-md-4 form-group">
             <label>Email</label>
             <input
+              v-model="email"
               v-validate="'required|email'"
               :class="errors.has('email') ? 'form-control is-invalid' : 'form-control'"
-              v-model="email"
               type="email"
               name="email"
               placeholder="Email"
             >
-            <div class="invalid-feedback">{{ errors.first('email') }}</div>
+            <div class="invalid-feedback">
+              {{ errors.first('email') }}
+            </div>
           </div>
           <div class="col-md-4 form-group">
             <label>Phone</label>
             <input
+              v-model="phone"
               v-validate="'required|numeric|digits:10'"
               :class="errors.has('phone') ? 'form-control is-invalid' : 'form-control'"
-              v-model="phone"
               type="tel"
               name="phone"
               placeholder="Phone"
             >
-            <div class="invalid-feedback">{{ errors.first('phone') }}</div>
+            <div class="invalid-feedback">
+              {{ errors.first('phone') }}
+            </div>
           </div>
         </div>
         <div class="form-row">
           <div class="col-md-3 form-group">
             <label>Check-In</label>
             <datepicker
+              v-model="checkin"
               v-validate="'required'"
               :disabled-dates="{ to: new Date() }"
-              v-model="checkin"
               :input-class="errors.has('checkin') ? 'form-control is-invalid' : 'form-control'"
               name="checkin"
               placeholder="Check-In"
               format="MMM dd yyyy"
               @selected="checkinSelected"
-              @closed="$validator.validate('checkin')" />
-            <div style="margin-top: 0.25rem; font-size: 80%; color: #dc3545">{{ errors.first('checkin') }}</div>
+              @closed="$validator.validate('checkin')"
+            />
+            <div style="margin-top: 0.25rem; font-size: 80%; color: #dc3545">
+              {{ errors.first('checkin') }}
+            </div>
           </div>
           <div class="col-md-3 form-group">
             <label>Check-Out</label>
             <datepicker
+              v-model="checkout"
               v-validate="'required'"
               :disabled-dates="checkin ? { to: addDays(checkin, 1) } : { to: new Date() }"
-              v-model="checkout"
               :input-class="errors.has('checkout') ? 'form-control is-invalid' : 'form-control'"
               name="checkout"
               placeholder="Check-Out"
               format="MMM dd yyyy"
-              @closed="$validator.validate('checkout')" />
-            <div style="margin-top: 0.25rem; font-size: 80%; color: #dc3545">{{ errors.first('checkout') }}</div>
+              @closed="$validator.validate('checkout')"
+            />
+            <div style="margin-top: 0.25rem; font-size: 80%; color: #dc3545">
+              {{ errors.first('checkout') }}
+            </div>
           </div>
           <div class="col-md-3 form-group">
             <label>Adults</label>
             <select
               v-model="adults"
-              class="form-control">
+              class="form-control"
+            >
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -92,7 +105,8 @@
             <label>Children</label>
             <select
               v-model="children"
-              class="form-control">
+              class="form-control"
+            >
               <option>0</option>
               <option>1</option>
               <option>2</option>
@@ -116,19 +130,23 @@
         <div
           v-if="errors.items.length > 0"
           class="alert alert-danger"
-          role="alert">
+          role="alert"
+        >
           Please correct the validation errors above.
         </div>
         <div
           v-if="showError"
           class="alert alert-danger"
-          role="alert">
-          An error was encountered while submitting the form. Please try again later or call us at <strong>(229) 431-2229</strong>.
+          role="alert"
+        >
+          An error was encountered while submitting the form.
+          Please try again later or call us at <strong>(229) 431-2229</strong>.
         </div>
         <div
           v-if="showSuccess"
           class="alert alert-success"
-          role="alert">
+          role="alert"
+        >
           The form was submitted successfully. Please allow 24 hours for us to process this request.
         </div>
         <button
@@ -138,7 +156,8 @@
           <font-awesome-icon
             v-if="submitDisabled"
             icon="spinner"
-            spin /> Send
+            spin
+          /> Send
         </button>
       </form>
     </div>
@@ -182,6 +201,17 @@ export default {
       submitDisabled: false,
       showError: false,
       showSuccess: false,
+    };
+  },
+  head() {
+    return {
+      titleTemplate: '%s - Request a Reservation',
+      meta: [
+        {
+          name: 'description',
+          content: 'Fill out the form to request a reservation.',
+        },
+      ],
     };
   },
   computed: {
@@ -240,10 +270,9 @@ export default {
         const data = buildData(this.$data, this.$store.state);
         try {
           this.submitDisabled = true;
-          const url =
-            process.env.NODE_ENV === 'development'
-              ? 'http://localhost:3001/email'
-              : '***REMOVED***';
+          const url = process.env.NODE_ENV === 'development'
+            ? 'http://localhost:3001/email'
+            : '***REMOVED***';
           await post(url, data);
           this.clearForm();
           this.$nextTick(() => this.$validator.reset());
@@ -259,17 +288,6 @@ export default {
       this.$data.showError = false;
       this.$data.showSuccess = false;
     },
-  },
-  head() {
-    return {
-      titleTemplate: '%s - Request a Reservation',
-      meta: [
-        {
-          name: 'description',
-          content: 'Fill out the form to request a reservation.',
-        },
-      ],
-    };
   },
 };
 </script>
