@@ -47,7 +47,7 @@
           <div class="row">
             <rate-card
               :rate="40"
-              title="Daily"
+              title="Nightly"
             />
             <rate-card
               :rate="225"
@@ -68,7 +68,7 @@
           <div class="row">
             <rate-card
               :rate="45"
-              title="Daily"
+              title="Nightly"
             />
             <rate-card
               :rate="250"
