@@ -54,7 +54,7 @@
               title="Weekly"
             />
             <rate-card
-              :rate="575"
+              :rate="625"
               title="Monthly"
             />
           </div>
@@ -75,7 +75,7 @@
               title="Weekly"
             />
             <rate-card
-              :rate="625"
+              :rate="675"
               title="Monthly"
             />
           </div>
