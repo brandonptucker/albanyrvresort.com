@@ -36,5 +36,9 @@
     "node-sass": "^5.0.0",
     "patch-package": "^6.2.2",
     "sass-loader": "^10.1.0"
+  },
+  "engines": {
+    "node": "=15",
+    "npm": "=7"
   }
 }
