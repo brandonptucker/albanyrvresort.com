@@ -46,15 +46,15 @@
         >
           <div class="row">
             <rate-card
-              :rate="40"
+              :rate="45"
               title="Nightly"
             />
             <rate-card
-              :rate="225"
+              :rate="250"
               title="Weekly"
             />
             <rate-card
-              :rate="625"
+              :rate="725"
               title="Monthly"
             />
           </div>
@@ -67,15 +67,15 @@
         >
           <div class="row">
             <rate-card
-              :rate="45"
+              :rate="48"
               title="Nightly"
             />
             <rate-card
-              :rate="250"
+              :rate="275"
               title="Weekly"
             />
             <rate-card
-              :rate="675"
+              :rate="775"
               title="Monthly"
             />
           </div>
