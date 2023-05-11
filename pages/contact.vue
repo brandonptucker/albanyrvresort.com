@@ -113,9 +113,9 @@ import { post } from 'axios';
 import Hero from '../components/Hero.vue';
 import GoogleMap from '../components/GoogleMap.vue';
 
-function buildData(data) {
+function buildData(data, myEmail) {
   return {
-    myEmail: '***REMOVED***',
+    myEmail,
     email: data.email,
     subject: `Contact form: ${data.name}`,
     message: `New submission from http://albanyrvresort.com/contact.\n\nName:\n${
@@ -165,7 +165,7 @@ export default {
       this.resetAlerts();
       const result = await this.$validator.validateAll();
       if (result) {
-        const data = buildData(this.$data);
+        const data = buildData(this.$data, this.$config.emailAddress);
         try {
           this.submitDisabled = true;
           await post(this.$config.emailServiceURL, data);

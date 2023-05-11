@@ -39,6 +39,8 @@ export default {
     { src: '~/plugins/vee-validate' },
   ],
   publicRuntimeConfig: {
-    emailServiceURL: process.env.EMAIL_SERVICE_URL || 'http://localhost:3001/email',
+    emailAddress: process.env.EMAIL_ADDRESS,
+    emailServiceURL: process.env.EMAIL_SERVICE_URL,
+    googleMapsAPIKey: process.env.GOOGLE_MAPS_API_KEY,
   },
 };

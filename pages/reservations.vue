@@ -169,9 +169,9 @@ import { post } from 'axios';
 import Datepicker from 'vuejs-datepicker';
 import Hero from '../components/Hero.vue';
 
-function buildData(data, state) {
+function buildData(data, state, myEmail) {
   return {
-    myEmail: '***REMOVED***',
+    myEmail,
     email: data.email,
     subject: `Reservation form: ${data.name}`,
     message: `New submission from http://albanyrvresort.com/reservations.\n\nName:\n${
@@ -267,7 +267,7 @@ export default {
       this.resetAlerts();
       const result = await this.$validator.validateAll();
       if (result) {
-        const data = buildData(this.$data, this.$store.state);
+        const data = buildData(this.$data, this.$store.state, this.$config.emailAddress);
         try {
           this.submitDisabled = true;
           await post(this.$config.emailServiceURL, data);
