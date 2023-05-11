@@ -38,4 +38,7 @@ export default {
     { src: '~/plugins/font-awesome' },
     { src: '~/plugins/vee-validate' },
   ],
+  publicRuntimeConfig: {
+    emailServiceURL: process.env.EMAIL_SERVICE_URL || 'http://localhost:3001/email',
+  },
 };

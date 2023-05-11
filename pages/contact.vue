@@ -168,10 +168,7 @@ export default {
         const data = buildData(this.$data);
         try {
           this.submitDisabled = true;
-          const url = process.env.NODE_ENV === 'development'
-            ? 'http://localhost:3001/email'
-            : '***REMOVED***';
-          await post(url, data);
+          await post(this.$config.emailServiceURL, data);
           this.clearForm();
           this.$nextTick(() => this.$validator.reset());
           this.showSuccess = true;
