@@ -1,40 +1,11 @@
 <template>
-  <div
-    id="map"
-    style="height: 400px; width: 100%"
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3482756.533482942!2d-84.114041!3d31.520604999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f2783d8e99dac3%3A0x3047e489a05da03b!2sAlbany%20RV%20Resort%20Inc!5e0!3m2!1sen!2sus!4v1692410754652!5m2!1sen!2sus"
+    width="100%"
+    height="400"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
   />
 </template>
-
-<script>
-export default {
-  mounted() {
-    const src = `https://maps.googleapis.com/maps/api/js?key=${this.$config.googleMapsAPIKey}&callback=initMap`;
-    if (!document.querySelector(`script[src='${src}']`)) {
-      window.initMap = this.initMap;
-      this.loadJS(src);
-    } else {
-      this.initMap();
-    }
-  },
-  methods: {
-    loadJS(src) {
-      const ref = document.getElementsByTagName('script')[0];
-      const script = document.createElement('script');
-      script.src = src;
-      script.async = true;
-      ref.parentNode.insertBefore(script, ref);
-    },
-    initMap() {
-      const center = { lat: 31.520605, lng: -84.114041 };
-      const map = new google.maps.Map(this.$el, { // eslint-disable-line
-        zoom: 7,
-        center,
-      });
-      const marker = new google.maps.Marker({ // eslint-disable-line
-        position: center,
-        map,
-      });
-    },
-  },
-};
-</script>
