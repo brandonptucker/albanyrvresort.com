@@ -15,8 +15,7 @@
       </p>
       <h4>Full Hookups</h4>
       <p class="mb-5">
-        Every site features 20/30/50 AMP electric outlets, water, sewer, and
-        cable TV with 76+ channels.
+        Every site features 20/30/50 AMP electric outlets, water, and sewer.
       </p>
       <h4>Easily Accessible Sites</h4>
       <p class="mb-5">

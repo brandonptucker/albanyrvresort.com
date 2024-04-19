@@ -82,7 +82,7 @@
         </div>
       </div>
       <p class="mb-5">
-        All rates include 30 or 50 amp electricity, water, sewer, cable TV,
+        All rates include 30 or 50 amp electricity, water, sewer,
         level cement patio, picnic table, and free wireless internet.
       </p>
     </div>
