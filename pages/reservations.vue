@@ -128,6 +128,14 @@
           </div>
         </div>
         <div
+          v-if="!showSuccess"
+          class="alert alert-warning"
+          role="alert"
+        >
+          <strong>Important:</strong> By proceeding with your reservation, you acknowledge and
+          accept that all bookings are non-refundable.
+        </div>
+        <div
           v-if="errors.items.length > 0"
           class="alert alert-danger"
           role="alert"

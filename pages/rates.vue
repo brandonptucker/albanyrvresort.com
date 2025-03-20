@@ -2,6 +2,11 @@
   <main role="main">
     <hero />
     <div class="container mt-5 text-center">
+      <p class="mb-5">
+        <strong>Cancellation Policy:</strong> Please note that all reservations
+        are non-refundable. No refunds will be issued for
+        canceled reservations.
+      </p>
       <ul
         id="pills-tab"
         class="nav nav-pills justify-content-center mb-5"
