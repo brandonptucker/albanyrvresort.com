@@ -9,8 +9,7 @@
     "generate": "nuxt generate",
     "aws:s3:sync": "aws s3 sync --acl public-read --delete dist/ s3://albanyrvresort.com",
     "aws:cloudfront:create-invalidation": "aws cloudfront create-invalidation --distribution-id E3EQ54GQNG6U8S --paths '/*'",
-    "deploy": "npm run generate && npm run aws:s3:sync && npm run aws:cloudfront:create-invalidation",
-    "postinstall": "patch-package"
+    "deploy": "npm run generate && npm run aws:s3:sync && npm run aws:cloudfront:create-invalidation"
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.2",
@@ -34,7 +33,6 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-vue": "^7.4.0",
     "node-sass": "^5.0.0",
-    "patch-package": "^6.2.2",
     "sass-loader": "^10.1.0"
   },
   "engines": {
