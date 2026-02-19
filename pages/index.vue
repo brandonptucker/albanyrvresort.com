@@ -7,9 +7,7 @@
             <p class="display-4 text-white text-center mb-4">
               Reserve Your Site Today!
             </p>
-            <div class="row justify-content-center">
-              <a class="btn btn-lg btn-primary">Book Now</a>
-            </div>
+            <a class="btn btn-lg btn-primary btn-block">Book Now</a>
           </div>
         </div>
       </div>
