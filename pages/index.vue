@@ -8,12 +8,7 @@
               Reserve Your Site Today!
             </p>
             <div class="row justify-content-center">
-              <router-link
-                class="btn btn-lg btn-primary"
-                to="/reservations"
-              >
-                Book Now
-              </router-link>
+              <a class="btn btn-lg btn-primary">Book Now</a>
             </div>
           </div>
         </div>

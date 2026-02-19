@@ -13,12 +13,7 @@
         <h1 class="display-4 mb-0 py-3">
           ${{ rate }}
         </h1>
-        <router-link
-          class="btn btn-lg btn-block btn-primary mt-3"
-          to="reservations"
-        >
-          Book Now
-        </router-link>
+        <a class="btn btn-lg btn-block btn-primary mt-3">Book Now</a>
       </div>
     </div>
   </div>
