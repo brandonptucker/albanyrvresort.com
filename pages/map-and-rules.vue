@@ -50,19 +50,19 @@ export default {
 
 <style scoped>
 .hero {
-  background: url(/reservations/hero-sm.jpg) no-repeat center center;
+  background: url(/map-and-rules/hero-sm.jpg) no-repeat center center;
   background-size: cover;
 }
 
 @media screen and (min-width: 576px) {
   .hero {
-    background-image: url(/reservations/hero-md.jpg);
+    background-image: url(/map-and-rules/hero-md.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(/reservations/hero-lg.jpg);
+    background-image: url(/map-and-rules/hero-lg.jpg);
   }
 }
 </style>
