@@ -1,14 +1,12 @@
 <template>
-  <div
-    class="hero"
-  >
+  <div class="hero">
     <div style="background: rgba(0, 0, 0, .5)">
       <div
         class="container text-center"
         style="padding-top: 10rem; padding-bottom: 10rem"
       >
         <h1 class="text-white">
-          {{ title }}
+          {{ computedTitle }}
         </h1>
         <p
           class="lead"
@@ -16,7 +14,7 @@
         >
           <router-link to="/">
             Home
-          </router-link> / {{ title }}
+          </router-link> / {{ computedTitle }}
         </p>
       </div>
     </div>
@@ -25,8 +23,15 @@
 
 <script>
 export default {
+  props: {
+    title: {
+      type: String,
+      default: null,
+    },
+  },
   computed: {
-    title() {
+    computedTitle() {
+      if (this.title) return this.title;
       const { name } = this.$route;
       return name.charAt(0).toUpperCase() + name.slice(1);
     },

@@ -73,12 +73,15 @@
           >
             Gallery
           </router-link>
-          <a
+          <router-link
+            active-class="active"
             class="nav-item nav-link"
-            href="/brochure.pdf"
-            target="_blank"
-            rel="noopener"
-          >Map &amp; Rules</a>
+            data-toggle="collapse"
+            data-target=".navbar-collapse.show"
+            to="/map-and-rules"
+          >
+            Map &amp; Rules
+          </router-link>
           <router-link
             active-class="active"
             class="nav-item nav-link"
