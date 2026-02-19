@@ -1,21 +1,3 @@
 $primary: #149c6a;
 
 @import '~bootstrap/scss/bootstrap.scss';
-
-.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {
-  border: 1px solid $primary !important;
-}
-
-.vdp-datepicker__calendar .cell.selected:hover {
-  color: #fff;
-  background: $primary !important;
-}
-
-.vdp-datepicker__calendar .cell.selected {
-  color: #fff;
-  background: $primary !important;
-}
-
-.vdp-datepicker .form-control[readonly] {
-  background: $white;
-}

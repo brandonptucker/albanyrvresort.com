@@ -1,7 +1,5 @@
 <template>
-  <main
-    role="main"
-  >
+  <main role="main">
     <div class="hero">
       <div class="overlay">
         <div class="container d-flex h-100">
@@ -9,68 +7,14 @@
             <p class="display-4 text-white text-center mb-4">
               Reserve Your Site Today!
             </p>
-            <form>
-              <div class="form-row justify-content-center">
-                <div class="form-group col-md-3">
-                  <label
-                    for="checkin"
-                    style="color: white"
-                  >Check-In</label>
-                  <datepicker
-                    id="checkin"
-                    v-model="checkin"
-                    :disabled-dates="{ to: new Date() }"
-                    placeholder="Check-In"
-                    input-class="form-control form-control-lg"
-                    format="MMM dd yyyy"
-                    @selected="checkinSelected"
-                  />
-                </div>
-                <div class="form-group col-md-3">
-                  <label
-                    for="checkout"
-                    style="color: white"
-                  >Check-Out</label>
-                  <datepicker
-                    id="checkout"
-                    v-model="checkout"
-                    :disabled-dates="checkin ? { to: addDays(checkin, 1) } : { to: new Date() }"
-                    placeholder="Check-Out"
-                    input-class="form-control form-control-lg"
-                    format="MMM dd yyyy"
-                  />
-                </div>
-                <div class="form-group col-md-2">
-                  <label
-                    for="adults"
-                    style="color: white"
-                  >Adults</label>
-                  <select
-                    id="adults"
-                    v-model="adults"
-                    class="form-control form-control-lg"
-                  >
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
-                </div>
-                <div
-                  class="form-group"
-                  style="padding-left: 5px; padding-right: 5px"
-                >
-                  <router-link
-                    class="btn btn-lg btn-primary"
-                    style="margin-top: 32px"
-                    to="/reservations"
-                  >
-                    Book Now
-                  </router-link>
-                </div>
-              </div>
-            </form>
+            <div class="row justify-content-center">
+              <router-link
+                class="btn btn-lg btn-primary"
+                to="/reservations"
+              >
+                Book Now
+              </router-link>
+            </div>
           </div>
         </div>
       </div>
@@ -164,13 +108,11 @@
 </template>
 
 <script>
-import Datepicker from 'vuejs-datepicker';
 import Testimonials from '../components/Testimonials.vue';
 import GoogleMap from '../components/GoogleMap.vue';
 
 export default {
   components: {
-    Datepicker,
     Testimonials,
     GoogleMap,
   },
@@ -217,46 +159,6 @@ export default {
       ],
     };
   },
-  computed: {
-    checkin: {
-      get() {
-        return this.$store.state.checkin;
-      },
-      set(value) {
-        this.$store.commit('updateCheckin', value);
-      },
-    },
-    checkout: {
-      get() {
-        return this.$store.state.checkout;
-      },
-      set(value) {
-        this.$store.commit('updateCheckout', value);
-      },
-    },
-    adults: {
-      get() {
-        return this.$store.state.adults;
-      },
-      set(value) {
-        this.$store.commit('updateAdults', value);
-      },
-    },
-  },
-  methods: {
-    checkinSelected(selected) {
-      if (selected >= this.checkout) {
-        const date = new Date(selected);
-        date.setDate(date.getDate() + 1);
-        this.checkout = date;
-      }
-    },
-    addDays(date, days) {
-      const d = new Date(date);
-      d.setDate(date.getDate() + days);
-      return d;
-    },
-  },
 };
 </script>
 
@@ -282,11 +184,13 @@ export default {
   background: url(/index/hero-sm.jpg) no-repeat center center;
   background-size: cover;
 }
+
 @media screen and (min-width: 576px) {
   .hero {
     background-image: url(/index/hero-md.jpg);
   }
 }
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(/index/hero-lg.jpg);
