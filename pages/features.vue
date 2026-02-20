@@ -57,6 +57,14 @@
         We love pets and have a very unique walking area that stretches nearly a
         half mile in overall length.
       </p>
+      <h4>Fenced Dog Park</h4>
+      <p class="mb-5">
+        We have a fenced dog park so your pets can play safely off-leash.
+      </p>
+      <h4>Gated Access</h4>
+      <p class="mb-5">
+        We have gated access for added security and peace of mind.
+      </p>
       <h4>Emergency Medical Station</h4>
       <p class="mb-5">
         EMS Station located less than 200 yards from the resort.
@@ -97,11 +105,13 @@ export default {
   background: url(/features/hero-sm.jpg) no-repeat center bottom;
   background-size: cover;
 }
+
 @media screen and (min-width: 576px) {
   .hero {
     background-image: url(/features/hero-md.jpg);
   }
 }
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image: url(/features/hero-lg.jpg);
