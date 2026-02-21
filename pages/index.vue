@@ -7,7 +7,10 @@
             <p class="display-4 text-white text-center mb-4">
               Reserve Your Site Today!
             </p>
-            <a class="btn btn-lg btn-primary btn-block">Book Now</a>
+            <a
+              class="btn btn-lg btn-primary btn-block"
+              :href="$config.reservationURL"
+            >Book Now</a>
           </div>
         </div>
       </div>

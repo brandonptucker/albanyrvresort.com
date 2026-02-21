@@ -13,7 +13,10 @@
         <h1 class="display-4 mb-0 py-3">
           ${{ rate }}
         </h1>
-        <a class="btn btn-lg btn-block btn-primary mt-3">Book Now</a>
+        <a
+          class="btn btn-lg btn-block btn-primary mt-3"
+          :href="$config.reservationURL"
+        >Book Now</a>
       </div>
     </div>
   </div>

@@ -12,7 +12,10 @@
           alt="Albany RV Resort Logo"
         >
       </router-link>
-      <a class="btn btn-primary d-sm-block d-md-none mr-2">Book Now</a>
+      <a
+        class="btn btn-primary d-sm-block d-md-none mr-2"
+        :href="$config.reservationURL"
+      >Book Now</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -85,7 +88,11 @@
             Contact
           </router-link>
         </div>
-        <a class="btn btn-primary d-none d-md-block">Book Now</a>
+        <a
+          class="btn btn-primary d-none d-md-block"
+          :href="$config.reservationURL"
+        >Book
+          Now</a>
       </div>
     </div>
   </nav>

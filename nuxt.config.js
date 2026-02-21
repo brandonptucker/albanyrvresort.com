@@ -41,5 +41,6 @@ export default {
   publicRuntimeConfig: {
     emailAddress: process.env.EMAIL_ADDRESS,
     emailServiceURL: process.env.EMAIL_SERVICE_URL,
+    reservationURL: process.env.RESERVATION_URL,
   },
 };
